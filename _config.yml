@@ -1,0 +1,2 @@
+baseurl: '/gallery'
+exclude: ['README.md']

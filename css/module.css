@@ -1,0 +1,26 @@
+/* close button styles */
+.close {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* mosaic start */
+.gallery {
+
+}
+
+/* overlay styles */
+.overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.overlay.open {
+  display: grid;
+}

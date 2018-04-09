@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to right, #642b73, #c6426e);
+  font-family: monospace, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    padding: 50px;
+  }
+}
