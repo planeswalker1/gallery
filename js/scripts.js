@@ -1,3 +1,4 @@
+// Business or (back-end) logic:
 // return a random number between 1 and a limit
 function randomNumber (limit) {
   return Math.floor(Math.random() * limit) + 1;
@@ -18,8 +19,10 @@ function generateHtml ([h, v]) {
 // create an array with 50 items containing an array of 2 numbers ranging from 1-4
 const digits = Array.from({ length: 50 }, () =>
 [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
+
+// User-interface or (front-end) logic:
+const gallery = document.querySelector('.gallery');
+
 // generate html
 const html = digits.map(generateHtml).join('');
-
-const gallery = document.querySelector('.gallery');
 gallery.innerHTML = html;
