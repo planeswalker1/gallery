@@ -4,11 +4,21 @@ function randomNumber (limit) {
   return Math.floor(Math.random() * limit) + 1;
 }
 
+//image alts
+let imageAlts = ['a butterfly', 'cherry blossoms', 'a crocus', 'crocuses', 'a forest path', 'the northern lights', 'a pocket watch', 'a seashell', 'a herd of sheep', 'a lighthouse', 'a tiger', 'a rose flower'];
+
+// generate image alt
+function generateAlt (imageSource) {
+  let alt = imageAlts[imageSource - 1];
+  return alt;
+}
+
 // generate html based on passed in width and heights
-function generateHtml ([h, v]) {
+function generateHtml ([column, row]) {
+  let number = randomNumber(12);
   return `
-          <div class="item h${h} v${v}">
-            <img src="images/${randomNumber(12)}.jpg">
+          <div class="item col--${column} row--${row}">
+            <img src="images/${number}.jpg" alt="Picure of ${generateAlt(number)}">
             <div class="item__overlay">
               <button class="item__button">View &rarr;</button>
             </div>

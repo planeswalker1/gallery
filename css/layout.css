@@ -31,27 +31,27 @@
   transition: transform 0.3s;
 }
 
-.item.v2 {
+.item.row--2 {
   grid-row: span 2;
 }
 
-.item.v3 {
+.item.row--3 {
   grid-row: span 3;
 }
 
-.item.v4 {
+.item.row--4 {
   grid-row: span 4;
 }
 
-.item.h2 {
+.item.col--2 {
   grid-column: span 2;
 }
 
-.item.h3 {
+.item.col--3 {
   grid-column: span 3;
 }
 
-.item.h4 {
+.item.col--4 {
   grid-column: span 4;
 }
 
