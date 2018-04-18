@@ -11,3 +11,23 @@
   padding: 5px;
   text-transform: uppercase;
 }
+
+/* open button styles */
+.overlay.overlay--open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: #fff;
+  width: 700px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .overlay__inner {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
