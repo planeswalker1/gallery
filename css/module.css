@@ -12,6 +12,20 @@
   text-transform: uppercase;
 }
 
+/* close button styles */
+.overlay--close {
+  background: none;
+  border: 1px solid #000;
+  border-radius: 1px;
+  color: #000;
+  cursor: pointer;
+}
+
+.overlay--close:hover {
+  background: #000;
+  color: #fff;
+}
+
 /* open button styles */
 .overlay.overlay--open {
   display: grid;

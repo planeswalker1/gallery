@@ -36,6 +36,11 @@ function openOverlay (e) {
   overlay.classList.add('overlay--open');
 }
 
+//hide overlay
+function closeOverlay (e) {
+  overlay.classList.remove('overlay--open');
+}
+
 // create an array with 50 items containing an array of 2 numbers ranging from 1-4
 const digits = Array.from({ length: 50 }, () =>
 [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
@@ -54,3 +59,7 @@ const items = document.querySelectorAll('.item');
 items.forEach(function (item) {
   item.addEventListener('click', openOverlay);
 });
+
+// close button click event listener
+const overlayClose = overlay.querySelector('.overlay--close');
+overlayClose.addEventListener('click', closeOverlay);

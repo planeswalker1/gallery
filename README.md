@@ -1,6 +1,6 @@
 # _gallery_
 
-#### _An image gallery made with css grid., 04.14.2018_
+#### _An image gallery made with css grid., 04.18.2018_
 
 #### By _**planeswalker1**_
 
